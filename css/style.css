@@ -1,0 +1,49 @@
+body {
+    background-color: #f2eee3;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: #00274C;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: "Playfair", sans-serif;
+    font-style: normal;
+    color: #00274C;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-size: 28px;
+    color: #00274C;
+}
+
+
+p {
+    line-height: 1.6;
+    color: #131516;
+}
+
+img {
+    border: 5px solid #00274C;
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 50px;
+    font-family: 'Merriweather', serif;
+}
