@@ -291,7 +291,7 @@ footer a {
         margin-top: 1rem;
     }
 
-    #image-outside {
+    .image-outside {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: auto auto 1fr;
@@ -299,26 +299,26 @@ footer a {
         align-items: start;
     }
 
-    #image-outside h2 {
+    .image-outside h2 {
         grid-column: 1 / -1;
         grid-row: 1;
         margin: 0;
     }
 
-    #image-outside figure {
+    .image-outside figure {
         grid-column: 1 / 2;
         grid-row: 2;
         width: 100%;
     }
 
 
-    #image-outside p {
+    .image-outside p {
         grid-column: 1 / 2;
         grid-row: 3 / -1;
         margin: 0;
     }
 
-    #image-outside article {
+    .image-outside article {
         grid-column: 2 / -1;
         grid-row: 2 / -1;
     }
