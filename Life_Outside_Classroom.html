@@ -47,7 +47,7 @@
                 <li><strong><a href="https://www.michiganmedicine.org/community/community-health-services/housing-bureau-seniors">HomeShare Program</a>:</strong> This program pairs students with older homeowners, offering affordable rent in exchange for help with household tasks like snow removal and trash disposal.</li>
             </ul>
         </section> -->
-        <section>
+        <section id="image-outside">
             <h2>Housing</h2>
             <figure>
                 <img src="images/Housing.jpg" alt="University of Michigan On-Campus Housing building">
@@ -79,7 +79,7 @@
         </section>
 
         <!-- Public Transportation Section -->
-        <section>
+        <section id="image-outside">
             <h2>Public Transportation</h2>
             <figure>
                 <img src="images/Transportation.jpg" alt="A Magic Bus arriving at the campus transit center at night">
@@ -106,9 +106,12 @@
         </section>
     </main>
     <footer>
-        <p>Student Life Resources | <a href="https://basicneeds.studentlife.umich.edu/resources/">Student Life </a></p>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> | © <span id="year"></span></p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
-    
+
 </body>
 
 </html>

@@ -36,7 +36,7 @@
         <p>At the University of Michigan, students have access to a range of health services that prioritize their well-being. 
             Whether it's medical care, dental care, or specialist services, 
             the University is committed to ensuring that students can thrive physically.</p>
-        <section>
+        <section class="with-image">
             <article>
                 <h3>University Health Service (UHS)</h3>
                 <figure>
@@ -46,7 +46,7 @@
                 <p>UHS provide integrated, evidence-based, and comprehensive clinical care. Access medical care, including routine check-ups, vaccinations, and specialist referrals. Learn more at <a href="https://uhs.umich.edu/">UHS Website</a>.</p>
             </article>
 
-            <article>
+            <article class="two-image">
                 <h3>UM Dental Care</h3>
                 <figure>
                     <img src="images/schoolofdentistry05.jpg" alt="University of Michigan Dental School front desk">
@@ -67,7 +67,7 @@
             <p>University of Michigan offers essential food support for students within the campus community. 
                 Students can access a variety of nutritious food options to ensure that 
                 everyone has the resources they need to maintain a healthy lifestyle.</p>
-            <article>
+            <article class="two-image">
                 <h3>Maize & Blue Cupboard</h3>
                 <figure>
                     <img src="images/MaizeBlueBuilding.webp" alt="Maize & Blue Cupboard building">
@@ -85,7 +85,10 @@
         </section>
     </main>
     <footer>
-        <p>Student Life Resources | <a href="https://basicneeds.studentlife.umich.edu/resources/">Student Life </a></p>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> | © <span id="year"></span></p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
     
 </body>

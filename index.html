@@ -38,8 +38,13 @@
                 <li>Life Outside Classroom</li>
                 <li>Contact</li>
             </ol>
+            <form action="search.html" method="get">
+                <label for="search-input">Search for resources</label>
+                <input type="text" id="search-input" name="q" placeholder="Search for resources">
+                <button type="submit">Search</button>
+            </form>
 
-        <section>
+        <section class="with-image">
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             <article>
@@ -59,65 +64,83 @@
                 <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
             </article>
         </section>
-        
-        <section>
+
+        <section class="without-image">
             <h2>Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
-            <article>
+            <div class="resource-item">
                 <h3>Counseling and Psychological Services (CAPS):</h3>
                 <ul>
-                    <li> Access individual counseling, group therapy, workshops, and crisis intervention services.</li>
+                    <li>Access individual counseling, group therapy, workshops, and crisis intervention services.</li>
                 </ul>
+            </div>
+            <div class="resource-item">
                 <h3>Wellness Coaching:</h3>
                 <ul>
                     <li>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</li>
                 </ul>
+            </div>
+            <div class="resource-item">
                 <h3>Mindfulness Resources:</h3>
                 <ul>
-                    <li> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</li>
+                    <li>Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</li>
                 </ul>
+            </div>
+            <div class="resource-item">
                 <h3>Support Groups:</h3>
                 <ul>
-                    <li> Join peer support groups for shared experiences and collective coping strategies.</li>
+                    <li>Join peer support groups for shared experiences and collective coping strategies.</li>
                 </ul>
-            </article>
+            </div>
         </section>
 
-        <section id="life-outside-classroom">
+        <section class="without-image">
             <h2>Life Outside the Classroom</h2>
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
-            <article>
+            
+            <div class="resource-item">
                 <h3>Student Organizations:</h3>
                 <ul>
                     <li>Join one of the many student organizations to connect with peers who share your interests and passions.</li>
                 </ul>
+            </div>
             
+            <div class="resource-item">
                 <h3>Arts and Culture:</h3>
                 <ul>
                     <li>Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
                 </ul>
+            </div>
             
+            <div class="resource-item">
                 <h3>Career Services:</h3>
                 <ul>
                     <li>Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
                 </ul>
+            </div>
             
+            <div class="resource-item">
                 <h3>Community Engagement:</h3>
                 <ul>
                     <li>Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
                 </ul>
+            </div>
             
+            <div class="resource-item">
                 <h3>Housing and Transportation:</h3>
                 <ul>
                     <li>Find information on on-campus housing options and transportation services to ensure a comfortable living experience.</li>
                 </ul>
-            </article>
+            </div>
         </section>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> | © <span id="year"></span></p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
 </body>
 </html>

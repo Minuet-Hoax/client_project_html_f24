@@ -21,10 +21,11 @@ header img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     justify-self: left;
+    max-width: 100px;
 }
 
 nav {
-    grid-column: 2 / 6;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -37,10 +38,10 @@ nav ul {
 }
 
 nav ul li {
+    text-align: center;
     font-family: "Playfair", serif;
     font-size: 0.85rem;
     text-transform: uppercase;
-    justify-self: left;
 }
 
 nav ul li a {
@@ -49,9 +50,14 @@ nav ul li a {
     font-weight: bold;
 }
 
-
 nav ul li a:hover {
     color: white;
+    text-decoration: underline;
+}
+
+nav ul li.active a {
+    color: white ;
+    border-bottom: 2px solid #FFCB05;
 }
 
 a[href="#main"] {
@@ -105,7 +111,7 @@ figure {
 }
 
 h1 {
-    grid-column: 1 / 7;
+    grid-column: 1 / 6;
     grid-row: 2 / 3;
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
@@ -212,4 +218,199 @@ footer a {
     color: white;
     transition: color 0.2s ease;
     text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .with-image {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .with-image p {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin: 0;
+    }
+
+    .with-image article {
+        grid-row: 3 / 4;
+        gap: 1rem;
+    }
+
+    .without-image {
+        display: grid;
+        gap: 2rem;
+    }
+
+    .without-image .resource-item {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    .without-image .resource-item h3 {
+        margin: 0;
+        align-self: center;
+    }
+
+    .without-image .resource-item ul {
+        margin: 0;
+    }
+
+    .two-image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    .two-image h3 {
+        grid-column: 1 / -1;
+    }
+
+    .two-image figure {
+
+        margin: 0;
+    }
+
+    .two-image p {
+        grid-column: 1 / -1;
+        grid-row: 3 /-1;
+        margin-top: 1rem;
+    }
+
+    #image-outside {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto 1fr;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    #image-outside h2 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin: 0;
+    }
+
+    #image-outside figure {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        width: 100%;
+    }
+
+
+    #image-outside p {
+        grid-column: 1 / 2;
+        grid-row: 3 / -1;
+        margin: 0;
+    }
+
+    #image-outside article {
+        grid-column: 2 / -1;
+        grid-row: 2 / -1;
+    }
+
+}
+
+#page-not-found header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+#page-not-found header img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+#page-not-found header h1 {
+    font-size: 2.5rem;
+}
+
+#page-not-found main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    color: #00274C;
+}
+
+.error-message {
+    text-align: center;
+    max-width: 600px;
+}
+
+.error-message h2 {
+    font-size: 2.8rem;
+    color: #00274C;
+}
+
+.error-message p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.error-message ul {
+    list-style: none;
+    padding: 0;
+}
+
+.error-message ul li {
+    margin-bottom: 1rem;
+}
+
+.error-message ul li a {
+    color: #00274C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#check-out li a:hover {
+    text-decoration: underline;
+}
+
+header form {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+form input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #FFCB05;
+    color: #00274C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #00274C;
+    color: #FFCB05;
 }
